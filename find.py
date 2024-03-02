@@ -19,7 +19,7 @@ for i in range(0,69):
     for file in os.listdir(directory):
         filename = os.fsdecode(file)
         path = filen + "/" + str(filename)
-        if filename.endswith(".csv"):
+        if not filename.endswith(".jpg"):
             continue
         for image in os.listdir(path):
             ima = os.fsdecode(image)    
